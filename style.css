@@ -1,0 +1,23 @@
+
+body{
+    background-color:fuchsia;
+    font-family: arial;
+}
+button{
+    color: blueviolet;
+    border-radius: 10px;
+    padding:10px;
+}
+
+h1{
+color:black;
+}
+
+#container1{
+    text-align:center;
+  }
+  #container2{
+    text-align:center;
+  }    
+
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hacker Card</title>
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body class="text-primary m-0 p-0" >
+  <div id="app" class="game-board">
+    <div class="hacker-area">
+      <h1 align="center">
+        <strong><u><font style="font-size:=30">HACKER CARDS</strong></font> </u><br /><hr />
+        <font style="font-size:20px"><b>Choose the card to stop hackers' attack</b></font>
+      </h1>
+
+      <div class="stats hacker-stats">
+        <div class="life-bar">
+          <div class="life-left hacker-color"></div>
+        </div>
+        <div class="life-total"></div>
+        <div class="thumbnail">👿</div>
+        <div class="name" style="color: black"><b>Hacker</b></div>
+      </div>
+
+      <div class="card hacker-card hacker-color">
+        <div class="text"></div>
+        <div class="power"></div>
+      </div>
+    </div>
+
+    <div class="thumbnail">👦</div>
+    <div class="name" style="color: black"><b><p style="text-align:left;">You</b></div>
+    <div class="player-area" id="container1">
+      <div class="stats player-stats">
+        <div class="life-bar">
+          
+        </div>
+        <div class="life-total"></div>
+       
+        
+      </div>
+
+      <div class="card player-card player-color">
+        <div class="text"></div>
+        <div class="power"></div>
+      </div>
+
+      <div class="card player-card player-color">
+        <div class="text"></div>
+        <div class="power"></div>
+      </div>
+
+      <div class="card player-card player-color">
+        <div class="text"></div>
+        <div class="power"></div>
+      </div>
+
+      <button class="start-game" onclick="startGame()" id="btn1">Start Game</button>
+      <button class="next-turn" onclick="playTurn()" id="btn2">Next Turn</button>
+    </div>
+  </div>
+
+  <div class="winner-section" id="container2">
+    <div>
+      
+      <button class="restart" onclick="location.reload()">Retry!</button>
+    </div>
+    <span class="winner-message" style="color: black"><b>You got hacked!</b></span>
+  </div>
+  
+</body>
+
+</html>
